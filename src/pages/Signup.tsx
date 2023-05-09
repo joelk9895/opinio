@@ -1,7 +1,6 @@
 import React from "react";
 import "./Signup.css";
 import { gsap } from "gsap";
-import axios from "axios";
 
 const Signup = () => {
   const [firstname, setfirstname] = React.useState("");

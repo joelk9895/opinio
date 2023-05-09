@@ -102,15 +102,33 @@ function App() {
       "#logo",
 
       {
-        color: "transparent",
+        color: "#212121",
       },
       {
-        color: "#fff",
+        color: "#1136A5",
         scrollTrigger: {
           trigger: ".landing",
           start: "10% 10%",
           end: "end end",
           scrub: 2,
+        },
+      }
+    );
+  }, []);
+  useEffect(() => {
+    gsap.fromTo(
+      "#Scroll",
+
+      {
+        opacity: "1",
+      },
+      {
+        opacity: "0",
+        scrollTrigger: {
+          trigger: ".landing",
+          start: "10% 10%",
+          end: "end end",
+          scrub: 1,
         },
       }
     );
@@ -208,6 +226,7 @@ function App() {
             </Link>
           </div>
         </div>
+        <p id="Scroll">Let's Scroll ↓</p>
       </div>
     </>
   );
