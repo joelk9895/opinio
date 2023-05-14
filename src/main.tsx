@@ -6,12 +6,10 @@ import "./index.css";
 import Signup from "./pages/Signup.tsx";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/signup" element={<Signup />} />
-      </Routes>
-    </BrowserRouter>
-  </React.StrictMode>
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="/signup" element={<Signup />} />
+    </Routes>
+  </BrowserRouter>
 );
